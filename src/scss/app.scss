@@ -1,0 +1,11 @@
+// Base styles
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/typography';
+
+// Layout styles
+@import 'layout/header';
+@import 'layout/footer';
+
+// Elements styles
+@import 'elements/forms.scss';

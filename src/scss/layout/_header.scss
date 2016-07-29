@@ -5,8 +5,14 @@ header {
   align-items: center;
 
   h1 {
-    font-size: 48px;
     text-align: center;
     color: #ccc;
+    transition: all .5s;
+  }
+
+  @media (min-width: $brk-tablet) {
+    h1 {
+      font-size: 64px;
+    }
   }
 } // -- header --

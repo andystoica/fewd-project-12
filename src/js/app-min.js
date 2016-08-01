@@ -1,2 +1,2 @@
-
+function randomInt(n,t){return Math.floor(Math.random()*(t-n)+n)}function animate(n,t){function e(n,t){t<n.children().length?(n.children().eq(t).addClass("visible"),setTimeout(function(){e(n,t+1)},randomInt(50,300))):(setTimeout(function(){$(".main-intro").fadeIn(1e3)},500),setTimeout(function(){$(".main-nav").fadeIn(1e3)},1500))}for(var t=t||0,i=$(n),a=i.text(),o="",m=0;m<a.length;m++)o+="<span>"+a[m]+"</span>";i.html(o),e(i,t)}setTimeout(function(){animate(".main-heading")},3e3);
 //# sourceMappingURL=./app-min.js.map

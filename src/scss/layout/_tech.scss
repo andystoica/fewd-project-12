@@ -1,0 +1,136 @@
+main {
+  display: none;
+}
+
+.tech {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  background: url(../images/separator.png) center top no-repeat;
+
+  h2 {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  p {
+    padding: 0 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $brk-tablet) {
+  p {
+    max-width: 650px;
+    font-size: 20px;
+  }
+}
+
+
+
+.tech-filter {
+  max-width: 650px;
+  margin: 50px auto 35px;
+  list-style: none;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-around;
+
+  li:last-child {
+    display: none;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey;
+    font-weight: 200;
+    text-indent: -9999px;
+    padding: 10px 20px 10px;
+    border-radius: 50px;
+    transition: color .3s, background-color .3s;
+    background: $color-bright-grey;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.tech-filter-languages {
+      background-image: url(../images/icon-language.svg);
+    }
+    &.tech-filter-frameworks {
+      background-image: url(../images/icon-framework.svg);
+    }
+    &.tech-filter-databases {
+      background-image: url(../images/icon-database.svg);
+    }
+    &.tech-filter-tools {
+      background-image: url(../images/icon-tool.svg);
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+    &.active {
+      color: $color-white;
+      background-color: $color-light-grey;
+    }
+  }
+
+  @media (min-width: $brk-tablet) {
+    justify-content: center;
+    margin: 65px auto 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #efefef;
+
+    li:last-child {
+      display: block;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 15px 5px;
+      padding: 3px 15px 5px;
+      text-indent: 0;
+      background: none;
+
+      &.active {
+        // $color-bright-grey;
+      }
+      &.tech-filter-languages,
+      &.tech-filter-frameworks,
+      &.tech-filter-databases,
+      &.tech-filter-tools {
+        background-image: none;
+      }
+    }
+  }
+}
+
+
+
+.tech-icons {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 600px;
+  transition: all 2s;
+
+  a {
+    padding: 15px;
+    img {
+      width: 50px;
+    }
+  }
+
+  @media (min-width: $brk-phone-l) {
+    a {
+      padding: 25px;
+      img {
+        width: 75px;
+      }
+    }
+  }
+}

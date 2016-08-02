@@ -5,10 +5,33 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 200;
+  line-height: 1;
+  color: $color-grey;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1;
+  color: $color-grey;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1;
+  color: $color-grey;
 }
 
 p {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
+  color: $color-dark-grey;
+}
+
+@media (min-width: $brk-tablet) {
+  p {
+    font-size: 20px;
+  }
 }

@@ -1,18 +1,14 @@
-* {
-  // background-color: rgba(0, 128, 0, .2);
-}
-
 
 .main-header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 75px 25px 0;
+  padding: 75px 25px 50px;
 } // -- .main-header --
 
 
 .main-nav {
-position: fixed;
+position: absolute;
 left: 0;
 top: 0;
 width: 100%;
@@ -70,7 +66,7 @@ display: none;
         anim-logo-fill 1.25s 2s forwards;
     }
     animation:
-        anim-logo-scale-down 0.75s 2s ease-out forwards;
+        anim-logo-scale-down 1s 2s ease-out forwards;
   }
 
   @media (min-width: $brk-phone-m) {
@@ -88,7 +84,6 @@ display: none;
   margin: 0 0 25px 0;
   color: $color-white;
   text-align: center;
-  line-height: 1;
   transition: all .5s;
   span {
     color: $color-white;
@@ -103,10 +98,6 @@ display: none;
   text-align: center;
   flex: 0 100%;
   margin: 0 0 25px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 1.5;
-  color: $color-dark-grey;
   display: none;
   @media (min-width: $brk-tablet) {
     max-width: 650px;

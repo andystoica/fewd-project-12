@@ -21,6 +21,8 @@
   }
 
   a.email {
+    display: block;
+    margin: 50px 0 35px;
     text-decoration: none;
     transition: color .3s;
     color: $color-grey;

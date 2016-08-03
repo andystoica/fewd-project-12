@@ -1,9 +1,12 @@
-
 .main-header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 75px 25px 50px;
+
+  @media (min-width: $brk-tablet) {
+    padding: 125px 25px 100px;
+  }
 } // -- .main-header --
 
 
@@ -102,6 +105,7 @@ display: none;
   @media (min-width: $brk-tablet) {
     max-width: 650px;
     font-size: 20px;
+    margin-bottom: 50px;
   }
 } // -- .main-intro --
 

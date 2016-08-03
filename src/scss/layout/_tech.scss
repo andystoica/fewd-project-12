@@ -111,13 +111,14 @@ main {
 
 .tech-icons {
   max-width: 800px;
+  padding: 0 10px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 130px;
   a {
-    padding: 15px;
+    padding: 12px;
     img {
       width: 50px;
     }
@@ -127,8 +128,12 @@ main {
     a {
       padding: 25px;
       img {
-        width: 75px;
+        width: 65px;
       }
     }
   }
-}
+
+  @media (min-width: $brk-tablet) {
+    padding: 0 25px;
+  }
+} // -- .tech-icons --

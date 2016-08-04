@@ -36,9 +36,12 @@ function animateHeader() {
       }, 500);
       setTimeout(function() {
         $('.main-nav').fadeIn(1000);
-        $('main').fadeIn(1000);
-        $('.main-footer').fadeIn(1000);
       }, 1500);
+      setTimeout(function() {
+        $('.main-content').fadeIn(1000);
+        $('.main-footer').fadeIn(1000);
+      }, 2500);
+
     }
   }
   recursiveAnimate(element, start);

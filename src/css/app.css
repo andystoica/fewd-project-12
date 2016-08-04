@@ -535,17 +535,17 @@ p {
     border-bottom: 10px solid rgba(34, 34, 34, 0.1);
     background: #93648d;
     transition: border-width .3s, background-color .3s; }
-    .project-list li.project-1 {
+    .project-list li.color-0 {
       background-color: #665c84; }
-    .project-list li.project-2 {
+    .project-list li.color-1 {
       background-color: #e7694c; }
-    .project-list li.project-3 {
+    .project-list li.color-2 {
       background-color: #80837c; }
-    .project-list li.project-4 {
+    .project-list li.color-3 {
       background-color: #e79730; }
-    .project-list li.project-5 {
+    .project-list li.color-4 {
       background-color: #747abc; }
-    .project-list li.project-6 {
+    .project-list li.color-5 {
       background-color: #19ac4b; }
     .project-list li:hover {
       border-width: 0; }
@@ -572,7 +572,8 @@ p {
 .project-details {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-content: flex-start; }
   .project-details .project-preview {
     width: 90%;
     margin: 15px 0 0; }
@@ -672,13 +673,13 @@ main {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center; }
-    .tech-filter a.tech-filter-languages {
+    .tech-filter a.tech-filter-language {
       background-image: url(../images/icon-language.svg); }
-    .tech-filter a.tech-filter-frameworks {
+    .tech-filter a.tech-filter-framework {
       background-image: url(../images/icon-framework.svg); }
-    .tech-filter a.tech-filter-databases {
+    .tech-filter a.tech-filter-database {
       background-image: url(../images/icon-database.svg); }
-    .tech-filter a.tech-filter-tools {
+    .tech-filter a.tech-filter-tool {
       background-image: url(../images/icon-tool.svg); }
     .tech-filter a:hover {
       color: #222222; }
@@ -700,7 +701,7 @@ main {
         padding: 3px 15px 5px;
         text-indent: 0;
         background: none; }
-        .tech-filter a.tech-filter-languages, .tech-filter a.tech-filter-frameworks, .tech-filter a.tech-filter-databases, .tech-filter a.tech-filter-tools {
+        .tech-filter a.tech-filter-language, .tech-filter a.tech-filter-framework, .tech-filter a.tech-filter-database, .tech-filter a.tech-filter-tool {
           background-image: none; } }
 
 .tech-icons {
@@ -709,8 +710,8 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  min-height: 130px; }
+  align-content: flex-start;
+  flex-wrap: wrap; }
   .tech-icons a {
     padding: 12px; }
     .tech-icons a img {

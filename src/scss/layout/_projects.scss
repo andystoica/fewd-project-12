@@ -45,12 +45,12 @@
     border-bottom: 10px solid rgba($color-black, .1);
     background: #93648d;
     transition: border-width .3s, background-color .3s;
-    &.project-1 { background-color: $color-s1c1; }
-    &.project-2 { background-color: $color-s1c2; }
-    &.project-3 { background-color: $color-s1c3; }
-    &.project-4 { background-color: $color-s1c4; }
-    &.project-5 { background-color: $color-s1c5; }
-    &.project-6 { background-color: $color-s1c6; }
+    &.color-0 { background-color: $color-s1c0; }
+    &.color-1 { background-color: $color-s1c1; }
+    &.color-2 { background-color: $color-s1c2; }
+    &.color-3 { background-color: $color-s1c3; }
+    &.color-4 { background-color: $color-s1c4; }
+    &.color-5 { background-color: $color-s1c5; }
     &:hover {
       border-width: 0;
     }
@@ -88,6 +88,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
 
   .project-preview {
     width: 90%;

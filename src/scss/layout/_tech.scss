@@ -54,16 +54,16 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 
-    &.tech-filter-languages {
+    &.tech-filter-language {
       background-image: url(../images/icon-language.svg);
     }
-    &.tech-filter-frameworks {
+    &.tech-filter-framework {
       background-image: url(../images/icon-framework.svg);
     }
-    &.tech-filter-databases {
+    &.tech-filter-database {
       background-image: url(../images/icon-database.svg);
     }
-    &.tech-filter-tools {
+    &.tech-filter-tool {
       background-image: url(../images/icon-tool.svg);
     }
 
@@ -97,10 +97,10 @@ main {
       &.active {
         // $color-bright-grey;
       }
-      &.tech-filter-languages,
-      &.tech-filter-frameworks,
-      &.tech-filter-databases,
-      &.tech-filter-tools {
+      &.tech-filter-language,
+      &.tech-filter-framework,
+      &.tech-filter-database,
+      &.tech-filter-tool {
         background-image: none;
       }
     }
@@ -115,8 +115,8 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
-  min-height: 130px;
   a {
     padding: 12px;
     img {

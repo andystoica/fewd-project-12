@@ -375,25 +375,25 @@ h1 {
   font-size: 40px;
   font-weight: 200;
   line-height: 1;
-  color: #999999; }
+  color: #666666; }
 
 h2 {
   font-size: 40px;
   font-weight: 200;
   line-height: 1.2;
-  color: #999999; }
+  color: #666666; }
 
 h3 {
   font-size: 32px;
   font-weight: 200;
   line-height: 1.2;
-  color: #999999; }
+  color: #666666; }
 
 p {
   font-weight: 200;
   font-size: 18px;
   line-height: 1.5;
-  color: #888888; }
+  color: #222222; }
 
 @media (min-width: 768px) {
   p {
@@ -428,7 +428,7 @@ p {
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 200;
-        color: #888888; }
+        color: #222222; }
   @media (min-width: 375px) {
     .main-nav ul li a {
       font-size: 16px; } }
@@ -468,7 +468,7 @@ p {
   .main-heading span {
     color: #ffffff; }
     .main-heading span.visible {
-      color: #999999; }
+      color: #666666; }
 
 .main-intro {
   text-align: center;
@@ -477,8 +477,9 @@ p {
   display: none; }
   @media (min-width: 768px) {
     .main-intro {
-      max-width: 650px;
+      max-width: 850px;
       font-size: 20px;
+      margin-top: 25px;
       margin-bottom: 50px; } }
 
 /****************************
@@ -512,7 +513,7 @@ p {
     .projects {
       margin-bottom: 75px; }
       .projects p {
-        max-width: 650px;
+        max-width: 850px;
         font-size: 20px; } }
 
 .project-list {
@@ -531,7 +532,7 @@ p {
     margin: 15px;
     border-radius: 100%;
     border-top: 20px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 10px solid rgba(34, 34, 34, 0.1);
     background: #93648d;
     transition: border-width .3s, background-color .3s; }
     .project-list li.project-1 {
@@ -581,7 +582,7 @@ p {
       height: auto; }
   .project-details h3 {
     text-align: center;
-    width: 100%; }
+    width: 95%; }
   .project-details p {
     width: 100%;
     flex: 0 100%; }
@@ -605,7 +606,7 @@ p {
     background-size: 25px; }
     .project-details .btn-project-view:hover,
     .project-details .btn-project-github:hover {
-      background-color: #888888; }
+      background-color: #666666; }
   .project-details .btn-project-view {
     background-image: url(../images/icon-screen.svg);
     padding-left: 45px;
@@ -647,7 +648,7 @@ main {
 
 @media (min-width: 768px) {
   p {
-    max-width: 650px;
+    max-width: 850px;
     font-size: 20px; } }
 .tech-filter {
   max-width: 650px;
@@ -680,7 +681,7 @@ main {
     .tech-filter a.tech-filter-tools {
       background-image: url(../images/icon-tool.svg); }
     .tech-filter a:hover {
-      color: #000000; }
+      color: #222222; }
     .tech-filter a.active {
       color: #ffffff;
       background-color: #b5b5b5; }
@@ -745,7 +746,7 @@ main {
     transition: color .3s;
     color: #999999; }
     .main-footer a.email:hover {
-      color: #000000; }
+      color: #222222; }
   .main-footer .social-media {
     padding: 0;
     list-style: none;
@@ -773,4 +774,4 @@ main {
       .main-footer .social-media a.github {
         background-image: url(../images/icon-github.svg); }
       .main-footer .social-media a:hover {
-        background-color: #888888; }
+        background-color: #666666; }

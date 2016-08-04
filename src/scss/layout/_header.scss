@@ -33,7 +33,7 @@ display: none;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 200;
-        color: $color-dark-grey;
+        color: $color-black;
       }
     }
   }
@@ -91,7 +91,7 @@ display: none;
   span {
     color: $color-white;
     &.visible {
-      color: $color-grey;
+      color: $color-dark-grey;
     }
   }
 } // -- .main-heading --
@@ -103,8 +103,9 @@ display: none;
   margin: 0 0 25px;
   display: none;
   @media (min-width: $brk-tablet) {
-    max-width: 650px;
+    max-width: 850px;
     font-size: 20px;
+    margin-top: 25px;
     margin-bottom: 50px;
   }
 } // -- .main-intro --

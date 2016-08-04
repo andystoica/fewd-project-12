@@ -32,6 +32,10 @@ function renderTechIcons(filter) {
     $(this).fadeIn(300, function() {
       $(this).css('min-height', 0);
     });
+    // Disable clicking behaviour
+    $('.tech-icons a').click(function(e) {
+      e.preventDefault();
+    });
   });
 }
 

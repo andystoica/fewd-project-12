@@ -61,7 +61,7 @@ function renderProjectDetails(project) {
 /**
  * HELPER function that sets the appropriate active classes
  * to project list navigation elements
- */
+ **/
  function setActiveProject(id){
    activeProject = id;
    var navElement = $('*[data-id="' + id + '"]');

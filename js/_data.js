@@ -45,7 +45,7 @@ var projects = [
     "github" : "https://github.com/andystoica/fewd-project-10",
     "description" : "This project was about using at least one of the provided APIs to grab, fromat and present data from that API. Items had to be presented on a page in an attractive gallery of images or titles. Clicking an image opens a lightbox prodiving detailed information about that item. This project included Ajax calls using jQuery, pasring and formatting JSON with Javascript and a bit of CSS magic.",
     "preview" : "project-preview-6.jpg",
-    "tech" : ["html", "css", "js", "jquery", "github"]
+    "tech" : ["html", "css", "sass", "js", "jquery", "github"]
   },
 ];
 
@@ -192,3 +192,16 @@ var tech = [
     "image" : "tool-gulp.png",
   }
 ];
+
+
+/**
+ * Preload all project images
+ */
+function preloadImages() {
+  $(projects).each(function() {
+    $('<img/>')[0].src = 'images/' + this.preview;
+  });
+  $(tech).each(function() {
+    $('<img/>')[0].src = 'images/' + this.image;
+  });
+}

@@ -41,8 +41,8 @@
     height: 60px;
     margin: 15px;
     border-radius: 100%;
-    border-top: 20px solid rgba($color-white, .3);
-    border-bottom: 10px solid rgba($color-black, .1);
+    border-top: 15px solid rgba($color-white, .3);
+    border-bottom: 10px solid rgba($color-black, .2);
     background: #93648d;
     transition: border-width .3s, background-color .3s;
     &.color-0 { background-color: $color-s1c0; }
